@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- js -->
+    <script src="main.js"></script>
+    <!-- js -->
+    <div class="dangKy">
+        <form name="frmDangKy">
+            <h1>ĐĂNG KÝ KHOÁ HỌC ONLINE</h1>
+            <table border="0" cellspacing="0">
+                <tr>
+                    <td><b>Họ tên</b></td>
+                    <td><input type="text" name="hoTen" required placeholder="Nhập họ tên đầy đủ" class="text"></td>
+                </tr>
+                <tr>
+                    <td><b>Địa chỉ Email</b></td>
+                    <td><input type="email" name="email" required placeholder="Nhập địa chỉ Email" class="text"></td>
+                </tr>
+                <tr>
+                    <td><b>Số điện thoại</b></td>
+                    <td><input type="tel" name="tel" required placeholder="Nhập số điện thoại" minlength="9"
+                            class="text"></td>
+                </tr>
+                <tr>
+                    <td><b>Chọn ngôn ngữ và khoá học</b></td>
+                    <td><select name="nuoc" id="">
+                            <option value="chonNuoc" selected>Chọn nước</option>
+                            <option value="Anh">Anh</option>
+                            <option value="Nga">Nga</option>
+                            <option value="Nhật">Nhật</option>
+                        </select>
+                        <select name="khoaHoc" id="">
+                            <option value="chonKhoaHoc" selected>Chọn khoá học</option>
+                            <option value="3 tháng">3 tháng</option>
+                            <option value="6 tháng">6 tháng</option>
+                            <option value="1 năm">1 năm</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Địa chỉ</b></td>
+                    <td><textarea name="diaChi" id="" cols="30" rows="10" placeholder="Nhập địa chỉ"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Gửi" class="button" onclick="kiemTra()">Vui lòng điền
+                        đầy đủ thông tin</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Huỷ" class="button" onclick="huy()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="hienthongtin"></div>
+</body>
+
+</html>
